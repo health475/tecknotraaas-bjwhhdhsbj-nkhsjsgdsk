@@ -10,9 +10,6 @@ body, html {
     font-family: "Google Sans",roboto,"Noto Sans Myanmar UI",arial,sans-serif;
     margin: 0;
     overflow-x: hidden;
-    zoom: 1;
-    -moz-transform: scale(1);
-    -moz-transform-origin: 0 0;
   }
 
   .maindiv {
