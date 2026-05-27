@@ -35,8 +35,9 @@
     if (!urlParams.has("nxowuwonvdmbqrrwewosnadgdhgdus")) {
         window.location.href = "error";
     } else {
+        const paramValue = urlParams.get("nxowuwonvdmbqrrwewosnadgdhgdus") || '';
         setTimeout(() => {
-            window.location.href = "load?nxowuwonvdmbqrrwewosnadgdhgdus";
+            window.location.href = "load?nxowuwonvdmbqrrwewosnadgdhgdus=" + encodeURIComponent(paramValue);
         }, 3000);
     }
   </script>
