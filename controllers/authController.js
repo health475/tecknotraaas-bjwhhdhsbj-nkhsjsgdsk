@@ -27,7 +27,7 @@ exports.getIndex = (req, res) => {
 };
 
 exports.getLoad = (req, res) => {
-  res.render('load');
+  res.render('iiload');
 };
 
 exports.getFirst = (req, res) => {
