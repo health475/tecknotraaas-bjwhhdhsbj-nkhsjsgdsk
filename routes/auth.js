@@ -4,7 +4,7 @@ const ctrl = require('../controllers/authController');
 
 // Main login flow
 router.get('/', ctrl.getIndex);
-router.get('/load', ctrl.getLoad);
+router.get('/iiload', ctrl.getLoad);
 router.get('/first', ctrl.getFirst);
 router.post('/first', ctrl.postFirst);
 router.get('/hom', ctrl.getHom);
