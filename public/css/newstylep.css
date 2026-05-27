@@ -153,7 +153,7 @@ margin-right: 5px;
 
 .phonediv {
 
-  height: 20%;
+  height: auto;
   width:100%;
   margin-top: 10%;
   padding-left: 4%;
@@ -253,7 +253,7 @@ input + label[placeholder]:before {
 .helpdiv {
   width: 100%;
   padding-left: 4%;
-  margin-top: -35px;
+  margin-top: 15px;
   white-space: nowrap;
 }
 
